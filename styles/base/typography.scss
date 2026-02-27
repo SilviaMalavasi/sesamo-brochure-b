@@ -62,8 +62,37 @@ body.du_fvg_lg-body {
         padding: 0.5rem 1rem;
         border-radius: 3rem;
         background-color: var(--blue-title);
+        border: 2px solid var(--blue-title);
         font-weight: 700;
         color: var(--white) !important;
+        text-decoration: none;
+      }
+    }
+
+    &.du_fvg_lg-button-green {
+      display: inline-block;
+      margin: 0.8rem 0;
+
+      a {
+        padding: 0.5rem 1rem;
+        border-radius: 3rem;
+        background-color: var(--green);
+        border: 2px solid var(--green);
+        font-weight: 700;
+        text-decoration: none;
+      }
+    }
+
+    &.du_fvg_lg-button-white {
+      display: inline-block;
+      margin: 0.8rem 0;
+
+      a {
+        padding: 0.5rem 1rem;
+        border-radius: 3rem;
+        background-color: var(--white);
+        border: 2px solid var(--blue-title);
+        font-weight: 700;
         text-decoration: none;
       }
     }

@@ -1,0 +1,35 @@
+@use "../base/mixins" as *;
+@use "../base/media-queries" as *;
+
+
+/* BOX WITH LINK */
+body.du_fvg_lg-body {
+  .du_fvg_lg-box-prevoius {
+    padding: 1rem 1.6rem 0 1.8rem;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--light-grey);
+    margin-bottom: 2rem;
+
+    @include mediaQueryAllMobilePortrait {
+      padding: 1.5rem 1rem 0.5rem 1rem;
+    }
+
+    .du_fvg_lg-title {
+      color: var(--blue-title);
+      font-weight: 700;
+      @include font-14pt;
+      padding-bottom: 0.5rem;
+    }
+
+    .du_fvg_lg-question {
+      color: var(--blue-title);
+      font-style: italic;
+      font-weight: 700;
+      padding-bottom: 0;
+    }
+
+    .du_fvg_lg-answer {
+      font-style: italic;
+    }
+  }
+}

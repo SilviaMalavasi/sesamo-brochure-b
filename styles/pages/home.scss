@@ -11,19 +11,14 @@ body.du_fvg_lg-body {
     }
 
     .du_fvg_lg-box-link {
-      &:last-of-type {
-        a {
-          margin-bottom: 1.5rem;
-        }
-      }
 
       a {
-        padding: 2.5rem 1.6rem 2.5rem 1.8rem;
-        margin-bottom: 0.7rem;
+        p {
+          flex: 0 0 10rem;
 
-        @include mediaQueryAllMobilePortrait {
-          padding: 1.5rem;
-          margin-bottom: 1rem;
+          @include mediaQueryAllMobilePortrait {
+            flex: 0 0 8rem;
+          }
         }
       }
     }

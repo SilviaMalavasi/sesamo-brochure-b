@@ -23,6 +23,11 @@
   line-height: 1.5em;
 }
 
+@mixin font-17pt {
+  font-size: var(--font-17pt);
+  line-height: 1.5em;
+}
+
 @mixin font-20pt {
   font-size: var(--font-20pt);
   line-height: 1.5em;

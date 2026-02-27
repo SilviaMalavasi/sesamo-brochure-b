@@ -42,6 +42,31 @@ body.du_fvg_lg-body {
   p {
     @include font-16pt;
     padding-bottom: 1rem;
+
+    &.du_fvg_lg-blue-strong {
+      font-weight: 700;
+      color: var(--blue-title);
+    }
+
+    &.du_fvg_lg-small-strong {
+      @include font-14pt;
+      font-weight: 700;
+      margin-top: 1rem;
+    }
+
+    &.du_fvg_lg-button-blue {
+      display: inline-block;
+      margin: 0.8rem 0;
+
+      a {
+        padding: 0.5rem 1rem;
+        border-radius: 3rem;
+        background-color: var(--blue-title);
+        font-weight: 700;
+        color: var(--white) !important;
+        text-decoration: none;
+      }
+    }
   }
 
   a,
@@ -54,12 +79,12 @@ body.du_fvg_lg-body {
   }
 
   ul {
-    padding: 0.5rem 0 0.5rem 1.5rem;
+    padding: 0 0 2rem 1.5rem;
 
     li {
       list-style: square;
       @include font-16pt;
-      padding-bottom: 0.5rem;
+      padding-bottom: 0;
     }
   }
 }

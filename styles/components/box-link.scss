@@ -40,13 +40,17 @@ body.du_fvg_lg-body {
       }
 
       p {
+        padding-bottom: 0;
+      }
+
+      .du_fvg_lg-label-arrow {
         @include font-16pt;
         flex: 0 0 auto;
         display: flex;
         align-items: center;
         justify-content: flex-end;
         padding: 0;
-        margin-left: 2rem;
+        margin-left: 1rem;
 
         @include mediaQueryAllMobilePortrait {
           flex: 0 0 1rem;

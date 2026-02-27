@@ -15,5 +15,11 @@ body.du_fvg_lg-body {
     @include mediaQueryAllMobilePortrait {
       padding: 1.5rem 1.5rem 0.5rem 1.5rem;
     }
+
+    h1,
+    h2,
+    h3 {
+      color: var(--blue-title);
+    }
   }
 }

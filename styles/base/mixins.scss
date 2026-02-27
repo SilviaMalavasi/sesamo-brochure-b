@@ -18,6 +18,11 @@
   }
 }
 
+@mixin font-14pt {
+  font-size: var(--font-14pt);
+  line-height: 1.5em;
+}
+
 @mixin font-16pt {
   font-size: var(--font-16pt);
   line-height: 1.5em;

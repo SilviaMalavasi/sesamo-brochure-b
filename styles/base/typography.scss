@@ -1,0 +1,65 @@
+@use "../base/mixins" as *;
+@use "../base/media-queries" as *;
+
+/* TYPOGRAPHY */
+
+body.du_fvg_lg-body {
+  // Fallback for iOS 14 
+  font-size: 1.4vh;
+
+  font-size: var(--root-font-size);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "kern";
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+  color: var(--black);
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
+
+  // Fallback for iOS 14
+  @supports (height: 1vh) {
+
+    body.du_fvg_lg-body {
+      font-size: var(--root-font-size);
+    }
+  }
+
+  h1,
+  h2 {
+    @include font-24pt;
+    font-weight: 700;
+    padding-bottom: 1rem;
+  }
+
+  h3 {
+    @include font-21pt;
+    font-weight: 600;
+    padding-bottom: 1rem;
+  }
+
+  p {
+    @include font-16pt;
+    padding-bottom: 1rem;
+  }
+
+  a,
+  a:visited,
+  a:active,
+  a:hover,
+  a:link,
+  a:focus {
+    color: var(--black);
+  }
+
+  ul {
+    padding: 0.5rem 0 0.5rem 1.5rem;
+
+    li {
+      list-style: square;
+      @include font-16pt;
+      padding-bottom: 0.5rem;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+@use "../base/mixins" as *;
+@use "../base/media-queries" as *;
+
+/* VARIABLES */
+
+body.du_fvg_lg-body {
+
+  // Root font size 
+  --root-font-size: calc((1vh + 4vw + 16px) * 0.23);
+
+  // Font sizes
+
+  @each $i in 16, 20, 21, 24 {
+    --font-#{$i}pt: calc(var(--root-font-size) * 0.054 * #{$i});
+  }
+
+  // Other variables
+
+  --easing: cubic-bezier(0, 0, 0.22, 1);
+  --border-radius: 0.4rem;
+  --box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.2);
+
+  --white: #ffffff;
+  --black: #000000;
+  --black-text: #343434;
+  --blue: #00297A;
+  --blue-title: #00339C;
+  --blue-dark: #18334C;
+  --green: #0AD5D2;
+  --light-grey: #F2F2F2;
+  --medium-grey: #a5a4a4;
+}
+
+@include mediaQuerySmallDesktopOnly {
+  body.du_fvg_lg-body {
+    --root-font-size: calc((1vh + 4vw + 16px) * 0.245);
+
+    @each $i in 16, 20, 21, 24 {
+      --font-#{$i}pt: calc(var(--root-font-size) * 0.054 * #{$i});
+    }
+
+  }
+}
+
+@include mediaQueryVerySmallDesktopOnly {
+  body.du_fvg_lg-body {
+    --root-font-size: calc((1vh + 4vw + 16px) * 0.2);
+
+    @each $i in 16, 20, 21, 24 {
+      --font-#{$i}pt: calc(var(--root-font-size) * 0.054 * #{$i});
+    }
+
+  }
+}
+
+@include mediaQuerySmartphonesOnly {
+  body.du_fvg_lg-body {
+    --root-font-size: 5.5vw;
+
+    @each $i in 16, 20, 21, 24 {
+      --font-#{$i}pt: calc(var(--root-font-size) * 0.054 * #{$i});
+    }
+  }
+}
+
+@include mediaQuerySmallTabletsOnly {
+  body.du_fvg_lg-body {
+    --root-font-size: 3vw;
+
+    @each $i in 16, 20, 21, 24 {
+      --font-#{$i}pt: calc(var(--root-font-size) * 0.054 * #{$i});
+    }
+  }
+}
+
+@include mediaQueryBigTabletsOnlyPortrait {
+  body.du_fvg_lg-body {
+    --root-font-size: 2.5vw;
+
+    @each $i in 16, 20, 21, 24 {
+      --font-#{$i}pt: calc(var(--root-font-size) * 0.054 * #{$i});
+    }
+  }
+}
+
+@include mediaQueryBigTabletsOnlyLandscape {
+  body.du_fvg_lg-body {
+    --root-font-size: calc((1vh + 4vw + 16px) * 0.22);
+
+    @each $i in 10, 12, 13, 14, 16, 18, 20, 30 {
+      --font-#{$i}pt: calc(var(--root-font-size) * 0.054 * #{$i});
+    }
+  }
+}

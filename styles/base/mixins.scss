@@ -1,0 +1,39 @@
+@use "../base/media-queries" as *;
+
+@mixin focus {
+  @include mediaQueryDesktopOnly() {
+    &:focus {
+      @content;
+    }
+  }
+}
+
+@mixin hover {
+  @include mediaQueryDesktopOnly() {
+
+    &:hover,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+@mixin font-16pt {
+  font-size: var(--font-16pt);
+  line-height: 1.5em;
+}
+
+@mixin font-20pt {
+  font-size: var(--font-20pt);
+  line-height: 1.5em;
+}
+
+@mixin font-21pt {
+  font-size: var(--font-21pt);
+  line-height: 1.5em;
+}
+
+@mixin font-24pt {
+  font-size: var(--font-24pt);
+  line-height: 1.5em;
+}

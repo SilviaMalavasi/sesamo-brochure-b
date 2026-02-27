@@ -1,0 +1,64 @@
+@use "../base/mixins" as *;
+@use "../base/media-queries" as *;
+
+
+/* BOX WITH LINK */
+body.du_fvg_lg-body {
+  .du_fvg_lg-box-link {
+    &:last-of-type {
+      a {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--blue-title);
+      text-decoration: none;
+      border-top: 5px solid var(--blue);
+      background-color: var(--white);
+      border-radius: var(--border-radius);
+      align-items: center;
+      padding: 1.1rem 1.6rem 1.1rem 1.8rem;
+      box-shadow: var(--box-shadow);
+      margin-bottom: 1.5rem;
+
+      @include mediaQueryAllMobilePortrait {
+        padding: 1.5rem 1rem;
+      }
+
+      h2,
+      h3 {
+        padding: 0;
+        flex: 1;
+
+        @include mediaQueryAllMobilePortrait {
+          font-size: var(--font-16pt) !important;
+        }
+      }
+
+      p {
+        @include font-16pt;
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0;
+        margin-left: 2rem;
+
+        @include mediaQueryAllMobilePortrait {
+          flex: 0 0 7rem;
+          margin-left: 1rem;
+        }
+
+        svg {
+          flex: 0 0 0.5rem;
+          margin-left: 0.8rem;
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+/* RESET */
+
+body.du_fvg_lg-body {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  line-height: 1;
+
+  div,
+  span,
+  em,
+  img,
+  strong,
+  b,
+  u,
+  i,
+  ol,
+  ul,
+  li,
+  form,
+  label,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  figure,
+  figcaption,
+  footer,
+  header,
+  menu,
+  nav,
+  section,
+  details,
+  summary,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  a {
+    margin: 0;
+    vertical-align: baseline;
+  }
+
+  picture,
+  img,
+  article,
+  aside,
+  figcaption,
+  figure,
+  footer,
+  header,
+  menu,
+  nav,
+  section {
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+
+    &::before,
+    &::after {
+      box-sizing: border-box;
+    }
+  }
+
+  button {
+    outline: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+
+  img {
+    width: 100%;
+    height: auto;
+    -ms-flex-item-align: center;
+    align-self: center;
+    vertical-align: top;
+  }
+}

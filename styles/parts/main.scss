@@ -1,0 +1,141 @@
+@use "../base/mixins" as *;
+@use "../base/media-queries" as *;
+
+/* MAIN */
+body.du_fvg_lg-body {
+  .du_fvg_lg-site-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100svh;
+
+    @include mediaQueryAllMobilePortrait {
+      min-height: calc(100vh - 6.5rem);
+      min-height: calc(100svh - 6.5rem);
+    }
+
+    .du_fvg_lg-main-content {
+      display: flex;
+      flex: 1;
+
+      @include mediaQueryAllMobilePortrait {
+        flex-direction: column;
+      }
+
+      aside {
+        flex: 0 0 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1.5rem 4.5rem 1.5rem 3.5rem;
+        background-color: var(--white);
+        color: var(--black-text);
+
+        @include mediaQuerySmallDesktopOnly {
+          padding: 1.5rem 3rem 1.5rem 3rem;
+        }
+
+        @include mediaQueryVerySmallDesktopOnly {
+          flex: 0 0 30%;
+          padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+        }
+
+        @include mediaQueryAllMobilePortrait {
+          display: block;
+          padding: 1.5rem 1rem 0.5rem 1rem;
+        }
+
+        h1,
+        h2,
+        h3 {
+          color: var(--blue-title);
+        }
+
+        a {
+          color: var(--blue-title);
+        }
+      }
+
+      article {
+        flex: 0 0 65%;
+        background-color: var(--light-grey);
+        padding: 3.5rem 6rem 3.5rem 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include mediaQuerySmallDesktopOnly {
+          padding: 3.5rem 3rem 3.5rem 3rem;
+        }
+
+        @include mediaQueryVerySmallDesktopOnly {
+          flex: 0 0 70%;
+          padding: 3.5rem 1.5rem 3.5rem 1.5rem;
+        }
+
+        @include mediaQueryAllMobilePortrait {
+          display: block;
+          flex: 1;
+          padding: 1.5rem 1rem 1.5rem 1rem;
+        }
+
+        h1,
+        h2 {
+          @include font-21pt;
+          color: var(--blue-title);
+        }
+
+        a {
+          color: var(--blue-title);
+        }
+      }
+    }
+
+    .du_fvg_lg-pagination {
+      background-color: var(--blue-dark);
+      color: var(--white);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 0 0 100%;
+      flex: 0 0 3.5rem;
+      height: 3.5rem;
+      padding-top: 0.2rem;
+
+      p {
+        display: flex;
+        align-items: center;
+        @include font-16pt;
+        padding-bottom: 0;
+
+        .du_fvg_lg-pagination-prev,
+        .du_fvg_lg-pagination-next {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: var(--white);
+          border-radius: 3rem;
+          width: 1.2rem;
+          height: 1.2rem;
+          margin: 0 1rem;
+
+          svg {
+            flex: 0 0 0.4rem;
+          }
+        }
+
+        span.du_fvg_lg-pagination-prev,
+        span.du_fvg_lg-pagination-next {
+          background-color: var(--medium-grey);
+        }
+
+        .du_fvg_lg-pagination-next {
+          svg {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+}

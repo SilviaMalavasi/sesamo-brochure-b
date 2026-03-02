@@ -16,7 +16,8 @@ body.du_fvg_lg-body {
       flex-direction: column;
       justify-content: center;
       padding-top: 1.5rem;
-      padding-bottom: 15rem;
+      padding-bottom: 15svw;
+      padding-bottom: 15vw;
 
       @include mediaQuerySmallDesktopOnly {
         padding-bottom: 10rem;

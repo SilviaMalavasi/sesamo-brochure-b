@@ -26,6 +26,14 @@ body.du_fvg_lg-body {
       @include mediaQueryAllMobilePortrait {
         padding-bottom: 1.5rem;
       }
+
+      ol {
+        &>li {
+          &::marker {
+            color: var(--contrast);
+          }
+        }
+      }
     }
   }
 }

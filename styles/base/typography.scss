@@ -120,7 +120,18 @@ body.du_fvg_lg-body {
   ol {
     padding: 0 0 2rem 1.5rem;
 
-    li {
+
+
+    &>li {
+      &::marker {
+        color: var(--blue-title);
+        font-weight: 700;
+      }
+
+      &>ul {
+        padding-bottom: 0;
+      }
+
       @include font-16pt;
       padding-bottom: 1rem;
     }

@@ -10,7 +10,6 @@ body.du_fvg_lg-body {
       color: var(--blue-dark);
     }
 
-    aside,
     article {
       display: flex;
       flex-direction: column;
@@ -28,7 +27,6 @@ body.du_fvg_lg-body {
       }
 
       @include mediaQueryAllMobilePortrait {
-        height: auto;
         padding-bottom: 1.5rem;
       }
     }

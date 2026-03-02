@@ -7,6 +7,28 @@
 body.du_fvg_lg-body {
   .du_fvg_lg-site-main.du_fvg_lg-pagina-2 {
 
+    aside,
+    article {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 1.5rem;
+      padding-bottom: 15rem;
+
+      @include mediaQuerySmallDesktopOnly {
+        padding-bottom: 10rem;
+      }
+
+      @include mediaQueryVerySmallDesktopOnly {
+        padding-bottom: 10rem;
+      }
+
+      @include mediaQueryAllMobilePortrait {
+        height: auto;
+        padding-bottom: 1.5rem;
+      }
+    }
+
     .du_fvg_lg-box-link {
 
       a {

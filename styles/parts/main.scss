@@ -49,6 +49,14 @@ body.du_fvg_lg-body {
           color: var(--blue-title);
         }
 
+        h2 {
+          padding-top: 2rem;
+
+          @include mediaQueryAllMobilePortrait {
+            padding-top: 0;
+          }
+        }
+
         a {
           color: var(--blue-title);
         }
@@ -85,10 +93,9 @@ body.du_fvg_lg-body {
     .du_fvg_lg-question-navigation {
       display: flex;
       justify-content: flex-end;
-      margin-top: 2rem;
 
       p {
-        margin-left: 0.5rem;
+        margin-left: 0.8rem;
       }
     }
 

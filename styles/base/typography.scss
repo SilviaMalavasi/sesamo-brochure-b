@@ -120,6 +120,10 @@ body.du_fvg_lg-body {
   ol {
     padding: 0 0 2rem 1.5rem;
 
+    @include mediaQueryAllMobilePortrait {
+      padding-left: 1rem;
+    }
+
     &>li {
       &::marker {
         color: var(--blue-title);

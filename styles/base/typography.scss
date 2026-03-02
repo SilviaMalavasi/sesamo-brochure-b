@@ -120,12 +120,14 @@ body.du_fvg_lg-body {
   ol {
     padding: 0 0 2rem 1.5rem;
 
-
-
     &>li {
       &::marker {
         color: var(--blue-title);
         font-weight: 700;
+      }
+
+      p.du_fvg_lg-blue-strong {
+        padding-bottom: 0;
       }
 
       &>ul {

@@ -132,6 +132,10 @@ body.du_fvg_lg-body {
 
       &>ul {
         padding-bottom: 0;
+
+        @include mediaQueryAllMobilePortrait {
+          padding-left: 0.4rem;
+        }
       }
 
       @include font-16pt;

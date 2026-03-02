@@ -1,0 +1,13 @@
+@use "../base/mixins" as *;
+@use "../base/media-queries" as *;
+
+
+/* HOME */
+
+body.du_fvg_lg-body {
+  .du_fvg_lg-site-main.du_fvg_lg-pagina-2-5 {
+    .du_fvg_lg-button-blue {
+      padding-bottom: 3rem;
+    }
+  }
+}

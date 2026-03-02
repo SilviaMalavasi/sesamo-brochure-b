@@ -116,4 +116,13 @@ body.du_fvg_lg-body {
       padding-bottom: 0;
     }
   }
+
+  ol {
+    padding: 0 0 2rem 1.5rem;
+
+    li {
+      @include font-16pt;
+      padding-bottom: 1rem;
+    }
+  }
 }

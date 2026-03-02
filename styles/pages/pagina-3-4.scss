@@ -1,0 +1,31 @@
+@use "../base/mixins" as *;
+@use "../base/media-queries" as *;
+
+
+/* HOME */
+
+body.du_fvg_lg-body {
+  .du_fvg_lg-site-main.du_fvg_lg-pagina-3-4 {
+
+    article {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 1.5rem;
+      padding-bottom: 15svw;
+      padding-bottom: 15vw;
+
+      @include mediaQuerySmallDesktopOnly {
+        padding-bottom: 10rem;
+      }
+
+      @include mediaQueryVerySmallDesktopOnly {
+        padding-bottom: 10rem;
+      }
+
+      @include mediaQueryAllMobilePortrait {
+        padding-bottom: 1.5rem;
+      }
+    }
+  }
+}
